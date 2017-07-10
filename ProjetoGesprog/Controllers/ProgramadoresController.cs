@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace ProjetoGesprog.Controllers
 {
-    public class HomeController : Controller
+    public class ProgramadoresController : Controller
     {
-        public ActionResult Index()
+        public ActionResult AddProgramadores()
         {
             ViewBag.Title = "Home Page";
 

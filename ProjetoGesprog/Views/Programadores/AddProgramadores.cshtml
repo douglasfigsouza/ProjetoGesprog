@@ -1,0 +1,26 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="row col-md-6">
+            @using (@Html.BeginForm())
+            {
+                @Html.ValidationSummary(true)
+                {
+                    <div class="row" ng-init="pag=1" ng-show="pag==1">
+                        <fieldset>
+                            {{prog}}
+                            <legend>Dados Pessoais</legend>
+                            <div class="col-md-6 form-group">
+                                <label for="Nome" class="col-md-12 control-label">Nome</label>
+                                <input type="text" class="col-md-12 form-control"ng-model="prog.Nome" name="Nome" />
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="Nome" class="col-md-12 control-label">Nome</label>
+                                <input type="text" class="col-md-12 form-control" ng-model="prog.Nome" name="Nome" />
+                            </div>
+                        </fieldset>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

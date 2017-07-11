@@ -5,9 +5,17 @@
             {
                 @Html.ValidationSummary(true)
                 {
+                    <div ng-repeat="item in lstStates">{</div>
                     <div class="row" ng-init="pag=1" ng-show="pag==1">
                         <fieldset>
-                            {{prog}}
+                            <select ng-model="customer.Country"
+                                    ng-options="item for item in lstStates"
+                                    ng-change="getCountryStates()"
+                                    class="form-control"
+                                    ng-required="true"
+                                    id="country">
+                                <option value="">-- Choose Country --</option>
+                            </select>  
                             <legend>Dados Pessoais</legend>
                             <div class="col-md-6 form-group">
                                 <label for="Nome" class="col-md-12 control-label">Nome</label>

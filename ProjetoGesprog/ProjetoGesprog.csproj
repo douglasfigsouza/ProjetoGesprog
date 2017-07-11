@@ -80,6 +80,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -211,7 +212,17 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BANCO.cs" />
+    <Compile Include="Models\CIDADE.cs" />
+    <Compile Include="Models\CONTAS_BANCARIAS.cs" />
+    <Compile Include="Models\C__MigrationHistory.cs" />
+    <Compile Include="Models\ESTADO.cs" />
+    <Compile Include="Models\GesProgDb.cs" />
+    <Compile Include="Models\HORARIOS.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\NIVEL_DE_CONHECIMENTO.cs" />
+    <Compile Include="Models\PROGRAMADORES.cs" />
+    <Compile Include="Models\TECNOLOGIAS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
